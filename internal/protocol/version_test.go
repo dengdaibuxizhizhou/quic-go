@@ -24,7 +24,6 @@ var _ = Describe("Version", func() {
 	})
 
 	It("has the right string representation", func() {
-		Expect(VersionTLS.String()).To(ContainSubstring("TLS"))
 		Expect(VersionDraft28.String()).To(ContainSubstring("QUIC WG draft-28"))
 		Expect(VersionDraft29.String()).To(ContainSubstring("QUIC WG draft-29"))
 		Expect(VersionWhatever.String()).To(Equal("whatever"))
